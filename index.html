@@ -1,0 +1,21 @@
+<html>
+    
+    <body>
+        <input type="text"/>
+        <button onclick="connect()">tente conectar</button>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <script>
+        const socket = io(location.href)
+        const connect=()=>{
+            email=document.getElementsByTagName('INPUT')[0].value
+            console.log(email)
+            socket.emit('verify',email)
+            document.getElementsByTagName('BODY')[0].style.backgroundColor='white'
+        }
+        socket.on('token',(data)=>{
+            alert(data.token)
+            document.getElementsByTagName('BODY')[0].style.backgroundColor='green'
+        })
+    </script>
+</html>
