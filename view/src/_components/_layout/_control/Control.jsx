@@ -2,6 +2,7 @@ import React from 'react'
 import { Component } from 'react';
 
 import './Control.css'
+import Bombeiros from '../_telaBombeiros/Bombeiros'
 
 export default class Control extends Component {
     render() {
@@ -20,7 +21,7 @@ export default class Control extends Component {
                                 <li>
                                     <input type="radio" name="tabs" className="rd_tabs" id="tab1"/>
                                     <label htmlFor="tab1">Bombeiros</label>
-                                    <div className="content">TELA BOMBEIROS</div>
+                                    <div className="content">{<Bombeiros/>}</div>
                                 </li>
                                 <li>
                                     <input type="radio" name="tabs" className="rd_tabs" id="tab2"/>

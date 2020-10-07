@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.card {
+    display: flex;
+    min-width: 200px;
+    min-height: 200px;
+    height: 100px;
+    box-shadow: 2px 2px 5px rgb(34, 34, 34);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin: 20px;
+    color: #444;
+}
